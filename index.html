@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>心语 · 交友小助手</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-logo">💗</div>
+        <div class="brand-text">
+          <div class="brand-name">心语</div>
+          <div class="brand-sub">交友小助手</div>
+        </div>
+      </div>
+      <nav class="nav" id="nav">
+        <a class="nav-item" data-route="posts"><span class="nav-ico">📮</span>交友帖子</a>
+        <a class="nav-item" data-route="search"><span class="nav-ico">🔍</span>找朋友</a>
+        <a class="nav-item" data-route="game"><span class="nav-ico">🎮</span>交友小游戏</a>
+        <a class="nav-item" data-route="profile"><span class="nav-ico">🌟</span>我的数据</a>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="me-card" id="meCard"></div>
+        <p class="tagline">慢慢来，<br/>总有人会喜欢真实的你。</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="菜单">☰</button>
+        <div class="topbar-title" id="topTitle">交友帖子</div>
+        <div class="topbar-right" id="topRight"></div>
+      </header>
+      <section class="content" id="content"></section>
+    </main>
+  </div>
+
+  <div id="modalRoot"></div>
+  <div id="toastRoot"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
